@@ -9,7 +9,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
-ROOT = Path(__file__).resolve().parent / "dist"
+ROOT = Path(__file__).resolve().parent / "docs"
 CHUNK = 12_000
 HOST = "127.0.0.1"
 PORT = 4173
@@ -19,12 +19,13 @@ def asset_names():
     html = (ROOT / "index.html").read_text()
     js = css = None
     for part in html.split('"'):
-        if part.startswith("/assets/") and part.endswith(".js"):
-            js = part[1:]
-        if part.startswith("/assets/") and part.endswith(".css"):
-            css = part[1:]
+        name = part.lstrip("./")
+        if name.startswith("assets/") and name.endswith(".js"):
+            js = name
+        if name.startswith("assets/") and name.endswith(".css"):
+            css = name
     if not js or not css:
-        raise SystemExit("dist/index.html is missing built assets. Run npm run build.")
+        raise SystemExit("docs/index.html is missing built assets. Run npm run build.")
     return js, css
 
 
