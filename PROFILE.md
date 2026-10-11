@@ -20,8 +20,9 @@
 
 **[SysSpectogram](https://github.com/lifeqsoll/SysSpectogram)** is a Linux / VPS defense utility that treats host telemetry as images.
 
-It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 60-second windows into spectrogram-like matrices, and scores them with a **CNN (computer vision)** plus **Isolation Forest (classical ML)** ensemble — useful for behavioral anomalies such as **CPU / GPU crypto-miners**, resource abuse, and unusual host load. Around that core it adds perimeter / egress watching, OSINT on the attacker IP (nmap, DNS, certificate logs), and a Telegram / web control plane for alerts and SOAR-lite responses (ban, recon, kill — with dry-run). Aya is ready: `common`, eBPF, loader, and the `execve` / `openat` probes.
+It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 60-second windows into spectrogram-like matrices, and scores them with a **CNN (computer vision)** plus **Isolation Forest (classical ML)** ensemble — useful for behavioral anomalies such as **CPU / GPU crypto-miners**, resource abuse, and unusual host load. Around that core it adds perimeter / egress watching, OSINT on the attacker IP (nmap, DNS, certificate logs), and a Telegram / web control plane for alerts and SOAR-lite responses (ban, recon, kill — with dry-run). In v1.0 it also ships a **Tauri 2 + Svelte** Control Center desktop app, a polkit-gated root helper, a Rust integrity agent with **Aya eBPF** probes (`execve`, `openat`, module load, `kill`, `setuid`), and an incident engine with ATT&CK mapping and HTML reports.
 
+![Version](https://img.shields.io/badge/Version-v1.0.0-2EA44F?style=flat-square)
 [![Repo](https://img.shields.io/badge/GitHub-SysSpectogram-181717?style=flat-square&logo=github)](https://github.com/lifeqsoll/SysSpectogram)
 [![Demo](https://img.shields.io/badge/Live_demo-Pages-0588C6?style=flat-square)](https://lifeqsoll.github.io/SysSpectogram/demo/)
 [![Site](https://img.shields.io/badge/Website-bio-0B3A66?style=flat-square)](https://lifeqsoll.github.io/bio/)
@@ -33,6 +34,8 @@ It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 **Machine Learning & CV**
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -40,11 +43,15 @@ It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
 **Tools & OS**
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white)
+![eBPF](https://img.shields.io/badge/eBPF_Aya-E95420?style=flat-square&logo=linux&logoColor=white)
 
 ---
 
