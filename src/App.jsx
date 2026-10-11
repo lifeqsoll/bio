@@ -194,6 +194,9 @@ export default function App() {
             <li>
               <a href={t.links.telegram}>{t.linkLabels.telegram}</a>
             </li>
+            <li>
+              <a href={t.links.x}>{t.linkLabels.x}</a>
+            </li>
           </ul>
         </section>
       </main>

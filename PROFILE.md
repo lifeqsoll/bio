@@ -55,7 +55,14 @@ It samples CPU, memory, network, disk, and **GPU** metrics every second, builds 
 
 ---
 
+### GitHub languages
+
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lifeqsoll&layout=compact&hide_border=true&langs_count=8&theme=transparent)
+
+---
+
 ### Contact
 
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/emosensei)
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/lifeqsoll)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lifeqsoll@gmail.com)
